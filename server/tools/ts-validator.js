@@ -3,8 +3,11 @@ var moment = require('moment');
 const df = "MMMM D, YYYY";
 const unixToken = "X";
 const valid_df = [
-  "Do MMMM YYYY", "MM-DD-YYYY", "YYYY-MM-DD",
-  "MMM D YYYY", "MMMM D, YYYY", "D MMM YYYY"
+  "MM-DD-YYYY", "YYYY-MM-DD",
+  "MMM D YYYY", "MMM DD YYYY", "MMM Do YYYY",
+  "MMM D, YYYY", "MMM DD, YYYY", "MMM Do, YYYY",
+  "MMMM D YYYY", "MMMM DD YYYY", "MMMM Do YYYY",
+  "MMMM D, YYYY", "MMMM DD, YYYY", "MMMM Do, YYYY",
 ];
 
 var checkUnixTS = (timeInput) => moment.unix(timeInput).isValid();

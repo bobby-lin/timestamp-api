@@ -5,6 +5,7 @@ var getTimestamp = ((timeInput) => {
     unix: null,
     natural: null
   }
+
   if (validator.checkUnixTS(timeInput)) {
     timestamp.unix = Number(timeInput); // Unix stamp stored in integer
     timestamp.natural = validator.convertUnixToDate(timeInput);
@@ -13,6 +14,7 @@ var getTimestamp = ((timeInput) => {
     timestamp.unix = validator.convertDateToUnix(timeInput);
     timestamp.natural = validator.getStandardDate(timeInput);
   }
+  
   return timestamp;
 });
 
