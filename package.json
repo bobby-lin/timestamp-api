@@ -2,7 +2,7 @@
   "name": "timestamp-api",
   "version": "1.0.0",
   "description": "Timestamp API microservice",
-  "main": "/server/server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
     "test": "mocha server/**/*.test.js",

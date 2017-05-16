@@ -14,7 +14,7 @@ var getTimestamp = ((timeInput) => {
     timestamp.unix = validator.convertDateToUnix(timeInput);
     timestamp.natural = validator.getStandardDate(timeInput);
   }
-  
+
   return timestamp;
 });
 
