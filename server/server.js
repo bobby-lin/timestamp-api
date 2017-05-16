@@ -1,5 +1,5 @@
 var express = require('express');
-var timestamp = require('./tools/getTimestamp');
+var timestamp = require('./tools/getTimeStamp');
 var hbs = require('hbs');
 
 var app = express();
