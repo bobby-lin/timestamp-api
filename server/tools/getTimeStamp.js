@@ -1,4 +1,4 @@
-var validator = require('./tools/ts-validator');
+var validator = require('./ts-validator');
 
 var getTimestamp = ((timeInput) => {
   var timestamp = {
