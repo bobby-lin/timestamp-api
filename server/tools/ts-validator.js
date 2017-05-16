@@ -15,7 +15,7 @@ var getStandardDate = (dateTS) => moment(dateTS, valid_df, true).format(df);
 var convertDateToUnix = ((dateTS) => {
   var offset = moment(dateTS, valid_df, true).utcOffset();
   var adjustedTime =  moment(dateTS, valid_df, true).add(offset,'minutes');
-  return moment.utc(adjustedTime).format(unixToken);
+  return Number(moment.utc(adjustedTime).format(unixToken));
 });
 
 module.exports = {
